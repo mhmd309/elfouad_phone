@@ -27,6 +27,10 @@
   .header .info h3 {
     font-size: 70px
   }
+  
+  .header .info .text-header span {
+    font-size: 18px
+  }
 
   .main-heading {
     text-align: center;
