@@ -1,0 +1,102 @@
+/* Smart Phones And Tablets */
+@media (max-width:768px) {
+  .navbar {
+    padding: 3px 0 !important;
+  }
+
+  .navbar .navbar-brand {
+    display: block
+  }
+
+  .navbar .navbar-nav {
+    margin: 10px 0;
+    padding: 0;
+    text-align: center
+  }
+
+  .navbar .navbar-nav .nav-link {
+    margin: 5px 0;
+    padding-right: 10px;
+    border-radius: 50px
+  }
+
+  .navbar .navbar-nav .nav-link::before {
+    display: none
+  }
+
+  .header .info h3 {
+    font-size: 70px
+  }
+
+  .main-heading {
+    text-align: center;
+    font-size: 20px
+  }
+
+  .about .info-content p {
+    font-size: 21px
+  }
+
+  .about a {
+    width: 70%
+  }
+
+  .branch p {
+    font-size: 20px;
+    text-align: center
+  }
+
+  .branch p::before {
+    top: 30px
+  }
+
+  .branch .link p {
+    font-size: 17px
+  }
+  
+  .branch .link p::before {
+    top: 28px
+  }
+}
+
+/* Small Screen */
+@media (min-width:769px) and (max-width:991px) {
+  .navbar {
+    padding: 3px 0 !important;
+  }
+
+  .navbar .navbar-brand {
+    display: block
+  }
+
+  .navbar .navbar-nav {
+    margin: 10px 0;
+    padding: 0;
+    text-align: center
+  }
+
+  .navbar .navbar-nav .nav-link {
+    margin: 5px 0;
+    padding-right: 10px;
+    border-radius: 50px
+  }
+
+  .navbar .navbar-nav .nav-link::before {
+    display: none
+  }
+
+  .header .info h3 {
+    font-size: 70px
+  }
+
+  .header .info .text-header p {
+    font-size: 50px
+  }
+
+  .about a {
+    width: 40%
+  }
+}
+
+/* Medium Screen */
+@media (min-width:992px) and (max-width:1199px) {}
