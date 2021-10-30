@@ -13,18 +13,22 @@ allList.forEach(function (el) {
 document.getElementById("load-form").addEventListener("submit", computeResults);
 function computeResults(e) {
   let amount = document.getElementById("amount").value;
-  let rate = document.getElementById("rate").value;
   let price = document.getElementById("price").value;
-  let resulte = ((amount - price) * (rate.slice(0,2) / 100)).toFixed(2);
+  let rate = document.getElementById("rate").value.slice(0,2) / 100;
+  let month = document.getElementById("month").value;
 
-  if(rate === "30") {
+  let calc = amount - price;
+  let calcX = calc * (rate);
+  let resulte = ((calcX + calc) / month).toFixed(2);
+
+  if(month === "12") {
     document.getElementById("month-content").innerText = `انت الان على نظام الـ12 شهر`;
   }
-  if(rate === "25") {
+  if(month === "6") {
     document.getElementById("month-content").innerText = `انت الان على نظام الـ6 شهور`;
   }
-  if(rate === "20") {
-    document.getElementById("month-content").innerText = `انت الان على نظام الـ4 شهور`;
+  if(month === "4") {
+    document.getElementById("month-content").innerText = `انت على نظام الـ4 شهور`;
   }
 
   document.getElementById("text").innerText = `القسط كل شهر : ${resulte} جنيه`;
