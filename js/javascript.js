@@ -18,13 +18,13 @@ function computeResults(e) {
   let resulte = ((amount - price) * (rate.slice(0,2) / 100)).toFixed(2);
 
   if(rate === "30") {
-    document.getElementById("month-content").innerText = `هذا المبلغ على مدة الـ12 شهر`;
+    document.getElementById("month-content").innerText = `انت الان على نظام الـ12 شهر`;
   }
   if(rate === "25") {
-    document.getElementById("month-content").innerText = `هذا المبلغ على مدة الـ6 شهور`;
+    document.getElementById("month-content").innerText = `انت الان على نظام الـ6 شهور`;
   }
   if(rate === "20") {
-    document.getElementById("month-content").innerText = `هذا المبلغ على مدة الـ4 شهور`;
+    document.getElementById("month-content").innerText = `انت الان على نظام الـ4 شهور`;
   }
 
   document.getElementById("text").innerText = `القسط كل شهر : ${resulte} جنيه`;
