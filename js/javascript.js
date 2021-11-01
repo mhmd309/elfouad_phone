@@ -14,7 +14,7 @@ document.getElementById("load-form").addEventListener("submit", computeResults);
 function computeResults(e) {
   let amount = document.getElementById("amount").value;
   let price = document.getElementById("price").value;
-  let rate = document.getElementById("rate").value;
+  let rate = document.getElementById("rate").value / 100;
   let month = document.getElementById("month").value;
 
   let calc = amount - price;
