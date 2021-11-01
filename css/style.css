@@ -435,7 +435,8 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 10px
 }
 
-.branch .price .box .form input {
+.branch .price .box .form input,
+.branch .price .box .form select {
   background: #f7f7f7;
   border: 1px solid #e9e9e9;
   caret-color: var(--bg-scroll);
@@ -443,7 +444,8 @@ body::-webkit-scrollbar-thumb {
   outline: none;
   width: 90%;
   margin: 0 auto 10px;
-  border-radius: 50px
+  border-radius: 50px;
+  box-shadow: none
 }
 
 .branch .price .box .form button {
@@ -656,8 +658,3 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* End Footer */
-
-
-
-
-/* Lalezar */
