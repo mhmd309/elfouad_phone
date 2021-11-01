@@ -130,8 +130,16 @@
               <form class="form" id="load-form">
                 <input type="text" placeholder="اكتب المبلغ الكلى" maxlength="5" id="amount" autocomplete="off" />
                 <input type="text" placeholder="اكتب المقدم" id="price" autocomplete="off" />
-                <input type="text" placeholder="اكتب النسبه المئويه % [20 او 25 او 30]" id="rate" autocomplete="off" />
-                <input type="text" placeholder="اكتب المده [4 او 6 او 12]" id="month" autocomplete="off" />
+                <select class="form-select" id="rate">
+                  <option value="30">30%</option>
+                  <option value="25">25%</option>
+                  <option value="20">20%</option>
+                </select>
+                <select class="form-select" id="month">
+                  <option value="12">12</option>
+                  <option value="6">6</option>
+                  <option value="4">4</option>
+                </select>
                 <button id="btn" onclick="computeResults()">إحسب الان</button>
                 <span id="text"></span>
                 <span id="month-content"></span>
@@ -260,7 +268,7 @@
     <div class="container">
       <div class="copyright text-center">
         جميع حقوق الملكيه محفوظه لدى شركة الفؤاد
-        <span>بواسطة <a href="#">محمد عماره</a></span>
+        <span>بواسطة <a href="https://www.facebook.com/mii.ddo.77/" target="_blank">محمد عماره</a></span>
       </div>
     </div>
   </div>
