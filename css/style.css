@@ -448,6 +448,10 @@ body::-webkit-scrollbar-thumb {
   box-shadow: none
 }
 
+.branch .price .box .form select {
+  cursor: pointer
+}
+
 .branch .price .box .form button {
   background: var(--main-color);
   border: 1px solid var(--main-color);
