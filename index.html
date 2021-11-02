@@ -128,23 +128,31 @@
             <div class="box">
               <h2>إحسب قسطك</h2>
               <form class="form" id="load-form">
-                <input type="text" placeholder="اكتب المبلغ الكلى" maxlength="5" id="amount" autocomplete="off" />
-                <input type="text" placeholder="اكتب المقدم" id="price" autocomplete="off" />
-                <select class="form-select" id="rate">
-                  <option>إختار النسبه</option>
-                  <option value="30">30%</option>
-                  <option value="25">25%</option>
-                  <option value="20">20%</option>
-                </select>
-                <select class="form-select" id="month">
-                  <option>إختار المده</option>
-                  <option value="12">12</option>
-                  <option value="6">6</option>
-                  <option value="4">4</option>
-                </select>
-                <button id="btn" onclick="computeResults()">إحسب الان</button>
-                <span id="text"></span>
-                <span id="month-content"></span>
+                <div class="input-resultes">
+                  <label>اكتب سعر الهاتف*</label>
+                  <input type="text" maxlength="5" id="amount" autocomplete="off" required />
+                </div>
+                <div class="input-resultes">
+                  <label>اكتب المقدم*</label>
+                  <input type="text" id="price" autocomplete="off" required />
+                </div>
+                <div class="input-resultes">
+                  <label>إختار المده*</label>
+                  <select class="form-select" id="month">
+                    <option value="4">4</option>
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                  </select>
+                </div>
+                <div class="input-resultes none">
+                  <label>الفائده</label>
+                  <input type="text" id="rate" value="">
+                </div>
+                <div class="input-resultes">
+                  <input type="submit" onclick="computeResults()" value="إحسب الان" />
+                  <span id="msguser"></span>
+                  <span id="rate-content"></span>
+                </div>
               </form>
             </div>
           </div>
