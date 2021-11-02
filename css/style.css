@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Kite One', 'Scheherazade New';
+  font-family: 'Open Sans', 'Scheherazade New';
   direction: rtl
 }
 
@@ -44,8 +44,9 @@ body::-webkit-scrollbar-thumb {
   padding: 20px;
   border-radius: 5px;
   color: var(--main-color);
-  background: #e9e9e9
+  background: #f3f3f3
 }
+
 /* End Rulze */
 
 /* Start Navbar */
@@ -390,7 +391,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #efefef;
-  padding: 10px 15px
+  padding: 20px 15px
 }
 
 .branch .price .box .datials-info-price .div:nth-child(odd) {
@@ -399,6 +400,11 @@ body::-webkit-scrollbar-thumb {
 
 .branch .price .box .datials-info-price .div:last-child {
   border: 0
+}
+
+.branch .price .box .datials-info-price .div p {
+  margin: 0;
+  font-size: 18px
 }
 
 .branch .price .box .form {
@@ -564,7 +570,8 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
   background: var(--main-color);
-  color: #fff
+  color: #fff;
+  font-size: 20px
 }
 
 .myphone .box i {
@@ -578,7 +585,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .myphone .box p {
-  margin: 15px 0 0
+  margin: 15px 0 0;
+  font-size: 20px
 }
 
 /* End Myphome */
