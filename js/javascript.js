@@ -14,26 +14,34 @@ document.getElementById("load-form").addEventListener("submit", computeResults);
 function computeResults(e) {
   let amount = document.getElementById("amount").value;
   let price = document.getElementById("price").value;
-  let rate = document.getElementById("rate").value / 100;
   let month = document.getElementById("month").value;
+  let rate = document.getElementById("rate");
 
-  let calc = amount - price;
-  let calcX = calc * (rate);
-  let resulte = ((calcX + calc) / month).toFixed(2);
-
-  if(month === "12") {
-    document.getElementById("month-content").innerText = `انت الان على نظام الـ12 شهر`;
+  if(month === "4") {
+    rate.value = 20;
+    rate.setAttribute("value", "20");
+    document.getElementById("rate-content").innerText = "انت الان على نظام فائدة الـ20%";
   }
   if(month === "6") {
-    document.getElementById("month-content").innerText = `انت الان على نظام الـ6 شهور`;
+    rate.value = 25;
+    rate.setAttribute("value", "25");
+    document.getElementById("rate-content").innerText = "انت الان على نظام فائدة الـ25%";
   }
-  if(month === "4") {
-    document.getElementById("month-content").innerText = `انت على نظام الـ4 شهور`;
+  if(month === "12") {
+    rate.value = 30;
+    rate.setAttribute("value", "30");
+    document.getElementById("rate-content").innerText = "انت الان على نظام فائدة الـ30%";
   }
 
-  document.getElementById("text").innerText = `القسط كل شهر : ${resulte} جنيه`;
-  if (resulte === "NaN" || resulte === "" || resulte === "0.00" || resulte === "Infinity" || resulte === "%") {
-    document.getElementById("text").innerText = `يجب عليك إدخال بيانات`;
-  }
+  let calc = amount - price;
+  let calcX = calc * (rate.value / 100);
+  let resulte = ((calcX + calc) / month).toFixed(2);
+  document.getElementById("msguser").innerText = `القسط كل شهر : ${resulte} جنيه`;
+  if(
+    resulte === "NaN" ||
+    resulte === "" ||
+    resulte === "0.00" ||
+    resulte === "Infinity"
+    ){document.getElementById("msguser").innerText = `يجب عليك إدخال البيانات بشكل صحيح`;}
   e.preventDefault();
 }
