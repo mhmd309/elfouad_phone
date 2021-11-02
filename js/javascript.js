@@ -20,17 +20,17 @@ function computeResults(e) {
   if(month === "4") {
     rate.value = 20;
     rate.setAttribute("value", "20");
-    document.getElementById("rate-content").innerText = "انت الان على نظام فائدة الـ20%";
+    document.getElementById("rate-content").innerText = "انت الان على نظام فائدة الـ 20%";
   }
   if(month === "6") {
     rate.value = 25;
     rate.setAttribute("value", "25");
-    document.getElementById("rate-content").innerText = "انت الان على نظام فائدة الـ25%";
+    document.getElementById("rate-content").innerText = "انت الان على نظام فائدة الـ 25%";
   }
   if(month === "12") {
     rate.value = 30;
     rate.setAttribute("value", "30");
-    document.getElementById("rate-content").innerText = "انت الان على نظام فائدة الـ30%";
+    document.getElementById("rate-content").innerText = "انت الان على نظام فائدة الـ 30%";
   }
 
   let calc = amount - price;
