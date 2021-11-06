@@ -47,6 +47,33 @@ body::-webkit-scrollbar-thumb {
   background: #f3f3f3
 }
 
+.disc {
+  max-width: 700px;
+  margin: 10px auto 0;
+  color: #B91646;
+  font-size: 20px;
+  font-weight: bold
+}
+
+.go-link-form {
+  text-decoration: none;
+  background: var(--main-color);
+  border: 0;
+  padding: 10px 0;
+  outline: none;
+  width: 20%;
+  margin: 30px auto 0;
+  color: #fff !important;
+  border-radius: 10px;
+  transition: .7s;
+  display: block;
+  text-align: center
+}
+
+.go-link-form:hover {
+  background: var(--bg-scroll)
+}
+
 /* End Rulze */
 
 /* Start Navbar */
@@ -86,8 +113,7 @@ body::-webkit-scrollbar-thumb {
   background: #607ce7
 }
 
-.navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link.active {
+.navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link.active {
   color: #fff;
   background-color: var(--bg-scroll);
   font-weight: bold
@@ -150,7 +176,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
 }
 
-.header .info .img-header > div {
+.header .info .img-header>div {
   border-radius: 50%;
   padding: 10px;
   display: flex;
@@ -163,7 +189,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 22px
 }
 
-.header .info .img-header > div span:last-child {
+.header .info .img-header>div span:last-child {
   color: var(--bg-scroll)
 }
 
@@ -220,8 +246,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @keyframes up-and-down {
-  0%, 10%, 20%, 30%,
-  50%, 80%, 100% {
+  0%, 10%, 20%, 30%, 50%, 80%, 100% {
     transform: translateY(0)
   }
   40%, 60% {
@@ -284,25 +309,6 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   top: 4px;
   left: 5px
-}
-
-.about a {
-  text-decoration: none;
-  background: var(--main-color);
-  border: 0;
-  padding: 10px 0;
-  outline: none;
-  width: 20%;
-  margin: 40px auto 0;
-  color: #fff;
-  border-radius: 10px;
-  transition: .7s;
-  display: block;
-  text-align: center
-}
-
-.about a:hover {
-  background: var(--bg-scroll)
 }
 
 /* End About */
@@ -429,8 +435,7 @@ body::-webkit-scrollbar-thumb {
   margin: 0 20px 5px 0
 }
 
-.branch .price .box .form input[type="text"],
-.branch .price .box .form select {
+.branch .price .box .form input[type="text"], .branch .price .box .form select {
   background: #f7f7f7;
   border: 1px solid #e9e9e9;
   caret-color: var(--bg-scroll);
@@ -616,8 +621,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 40px;
   cursor: pointer;
   background: #e9e9e9;
-  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-  rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   position: relative;
   margin: 0 10px;
   transition: .7s;
@@ -653,27 +657,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* End Footer */
-
-/* Start Back Home Page */
-
-.homepage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--main-color);
-  width: 60px;
-  height: 60px;
-  color: #fff !important;
-  border-radius: 50px;
-  position: fixed;
-  top: 50px;
-  left: 20px;
-  text-decoration: none;
-  font-size: 25px;
-  border: 2px dotted #fff
-}
-
-/* End Back Home Page */
 
 .phone-section {
   padding: 40px 0
