@@ -59,15 +59,16 @@ body::-webkit-scrollbar-thumb {
   text-decoration: none;
   background: var(--main-color);
   border: 0;
-  padding: 10px 0;
+  padding: 10px 15px;
   outline: none;
-  width: 30%;
+  width: fit-content;
   margin: 30px auto 0;
   color: #fff !important;
   border-radius: 10px;
   transition: .7s;
   display: block;
-  text-align: center
+  text-align: center;
+  cursor: pointer
 }
 
 .go-link-form:hover {
@@ -413,10 +414,6 @@ body::-webkit-scrollbar-thumb {
   font-size: 18px
 }
 
-.branch .price .box .form {
-  padding: 10px 0 5px
-}
-
 .branch .price .box .form p {
   margin: 0;
   margin-bottom: 10px
@@ -435,7 +432,8 @@ body::-webkit-scrollbar-thumb {
   margin: 0 20px 5px 0
 }
 
-.branch .price .box .form input[type="text"], .branch .price .box .form select {
+.branch .price .box .form input[type="text"],
+.branch .price .box .form select {
   background: #f7f7f7;
   border: 1px solid #e9e9e9;
   caret-color: var(--bg-scroll);
@@ -490,6 +488,10 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   z-index: 1;
   overflow: hidden
+}
+
+.products .box.shadow {
+  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px !important;
 }
 
 .products .box span {
@@ -616,14 +618,15 @@ body::-webkit-scrollbar-thumb {
   width: 70px;
   height: 70px;
   line-height: 70px;
-  border-radius: 5px;
+  border-radius: 50px;
   text-align: center;
   font-size: 40px;
   cursor: pointer;
   background: #e9e9e9;
-  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+  rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   position: relative;
-  margin: 0 10px;
+  margin: 0 5px;
   transition: .7s;
   border: 1px solid transparent
 }
