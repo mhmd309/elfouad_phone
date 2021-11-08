@@ -37,10 +37,6 @@
     font-size: 21px
   }
 
-  .go-link-form {
-    width: 70%
-  }
-
   .branch p {
     font-size: 20px;
     text-align: center
@@ -56,6 +52,10 @@
   
   .branch .link p::before {
     top: 28px
+  }
+
+  .phone-section .box-form .form .overlay {
+    width: 95%
   }
 }
 
@@ -91,10 +91,6 @@
 
   .header .info .text-header p {
     font-size: 50px
-  }
-
-  .go-link-form {
-    width: 40%
   }
 }
 
