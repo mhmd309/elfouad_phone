@@ -62,11 +62,10 @@ body::-webkit-scrollbar-thumb {
   padding: 10px 15px;
   outline: none;
   width: fit-content;
-  margin: 30px auto 0;
+  margin: 30px 5px 0;
   color: #fff !important;
   border-radius: 10px;
   transition: .7s;
-  display: block;
   text-align: center;
   cursor: pointer
 }
@@ -169,29 +168,15 @@ body::-webkit-scrollbar-thumb {
 
 .header .info .img-header {
   position: relative;
-  width: 135px;
-  height: 135px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 150px;
+  height: 150px;
+  margin: auto
 }
 
-.header .info .img-header>div {
+.header .info .img-header img {
+  max-width: 100%;
   border-radius: 50%;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-  background: var(--main-color);
-  font-family: 'Lalezar';
-  font-size: 22px
-}
-
-.header .info .img-header>div span:last-child {
-  color: var(--bg-scroll)
+  display: block
 }
 
 .header .info .img-header::before {
@@ -414,63 +399,6 @@ body::-webkit-scrollbar-thumb {
   font-size: 18px
 }
 
-.branch .price .box .form p {
-  margin: 0;
-  margin-bottom: 10px
-}
-
-.branch .price .box .form .input-resultes {
-  max-width: 500px;
-  margin: auto
-}
-
-.branch .price .box .form label {
-  display: block;
-  font-weight: bold;
-  color: var(--main-color);
-  text-align: right;
-  margin: 0 20px 5px 0
-}
-
-.branch .price .box .form input[type="text"],
-.branch .price .box .form select {
-  background: #f7f7f7;
-  border: 1px solid #e9e9e9;
-  caret-color: var(--bg-scroll);
-  padding: 7px 17px;
-  outline: none;
-  width: 95%;
-  margin: 0 auto 10px;
-  box-shadow: none;
-  border-radius: 50px
-}
-
-.branch .price .box .form select {
-  cursor: pointer
-}
-
-.branch .price .box .form .none {
-  display: none
-}
-
-.branch .price .box .form input[type="submit"] {
-  background: var(--main-color);
-  border: 1px solid var(--main-color);
-  padding: 7px 15px;
-  outline: none;
-  width: 95%;
-  margin: 10px auto 5px;
-  color: #fff;
-  border-radius: 50px
-}
-
-.branch .price .box .form span {
-  display: block;
-  margin-bottom: 5px;
-  color: #B91646;
-  font-weight: bold
-}
-
 /* End Bransh */
 
 /* Start Products */
@@ -665,6 +593,102 @@ body::-webkit-scrollbar-thumb {
   padding: 40px 0
 }
 
+.phone-section .links {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.phone-section .box-form {
+  position: relative
+}
+
+.phone-section .box-form .form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:rgba(44, 57, 75, .8);
+  display: none
+}
+
+.phone-section .box-form .form .overlay {
+  background: #fff;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  transform: translate(-50%, -50%);
+  text-align: center
+}
+
+.phone-section .box-form .form .overlay h2 {
+  font-weight: 600;
+  margin: 0 auto 30px;
+  width: fit-content;
+  font-size: 20px
+}
+
+.phone-section .box-form .form .overlay p {
+  margin: 0;
+  margin-bottom: 10px
+}
+
+.phone-section .box-form .form .overlay .input-resultes {
+  max-width: 500px;
+  margin: auto
+}
+
+.phone-section .box-form .form .overlay label {
+  display: block;
+  font-weight: bold;
+  color: var(--main-color);
+  text-align: right;
+  margin: 0 20px 5px 0
+}
+
+.phone-section .box-form .form .overlay input[type="text"],
+.phone-section .box-form .form .overlay select {
+  background: #f7f7f7;
+  border: 1px solid #e9e9e9;
+  caret-color: var(--bg-scroll);
+  padding: 7px 17px;
+  outline: none;
+  width: 95%;
+  margin: 0 auto 10px;
+  box-shadow: none;
+  border-radius: 50px
+}
+
+.phone-section .box-form .form .overlay select {
+  cursor: pointer
+}
+
+.phone-section .box-form .form .overlay .none {
+  display: none
+}
+
+.phone-section .box-form .form .overlay input[type="submit"] {
+  background: var(--main-color);
+  border: 1px solid var(--main-color);
+  padding: 7px 15px;
+  outline: none;
+  width: 95%;
+  margin: 10px auto 5px;
+  color: #fff;
+  border-radius: 50px
+}
+
+.phone-section .box-form .form .overlay span {
+  display: block;
+  margin-bottom: 5px;
+  color: #B91646;
+  font-weight: bold
+}
+
 .phone-section .full-squer {
   margin: 30px 0;
   padding: 0;
@@ -711,4 +735,19 @@ body::-webkit-scrollbar-thumb {
 
 .phone-section .box .content-box span {
   color: #888
+}
+
+.phone-section .box-form .form .overlay .hide-form {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  background: #B91646;
+  cursor: pointer
 }
