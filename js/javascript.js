@@ -45,3 +45,14 @@ function computeResults(e) {
     ){document.getElementById("msguser").innerText = `يجب عليك إدخال البيانات بشكل صحيح`;}
   e.preventDefault();
 }
+
+// Show And Hide Section Clac Phone
+let clicked = document.querySelector('.links .clicked');
+let formShow = document.querySelector('.form');
+let formHide = document.querySelector('.hide-form');
+clicked.onclick = function() {
+  formShow.style.display = 'block';
+}
+formHide.onclick = function() {
+  formShow.style.display = 'none';
+}
