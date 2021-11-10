@@ -5,7 +5,6 @@
 }
 
 body {
-  font-family: 'Open Sans', 'Scheherazade New';
   direction: rtl
 }
 
@@ -41,18 +40,18 @@ body::-webkit-scrollbar-thumb {
   width: fit-content;
   margin: 0 auto 25px;
   font-size: 25px;
-  padding: 20px;
+  padding: 15px 25px;
   border-radius: 5px;
   color: var(--main-color);
-  background: #f3f3f3
+  background: #f3f3f3;
+  border: 2px dashed var(--main-color)
 }
 
 .disc {
   max-width: 700px;
   margin: 10px auto 0;
   color: #B91646;
-  font-size: 20px;
-  font-weight: bold
+  font-size: 20px
 }
 
 .go-link-form {
@@ -217,29 +216,6 @@ body::-webkit-scrollbar-thumb {
   font-size: 22px
 }
 
-.header .info .go-down {
-  position: absolute;
-  bottom: -100px;
-  left: 50%;
-  color: var(--main-color);
-  transform: translateX(-50%);
-  font-size: 25px
-}
-
-.header .info .go-down i {
-  position: relative;
-  animation: up-and-down 2s infinite
-}
-
-@keyframes up-and-down {
-  0%, 10%, 20%, 30%, 50%, 80%, 100% {
-    transform: translateY(0)
-  }
-  40%, 60% {
-    transform: translateY(-15px)
-  }
-}
-
 /* End Header */
 
 /* Start About */
@@ -347,10 +323,6 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer
 }
 
-.branch .price .box {
-  margin-bottom: 25px
-}
-
 .branch .price .box h2 {
   font-weight: 600;
   margin: 0 auto 30px;
@@ -429,7 +401,6 @@ body::-webkit-scrollbar-thumb {
   padding: 5px 25px;
   background: var(--main-color);
   color: #fff;
-  font-weight: bold;
   font-size: 18px;
   border-radius: 50px 0 0 50px
 }
@@ -454,6 +425,11 @@ body::-webkit-scrollbar-thumb {
 
 .products .box img {
   max-width: 100%
+}
+
+.products hr {
+  border-top: 1px solid #cbcbcb;
+  margin: 40px 0
 }
 
 /* End Products */
