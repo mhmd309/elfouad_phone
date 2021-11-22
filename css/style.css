@@ -218,6 +218,56 @@ body::-webkit-scrollbar-thumb {
 
 /* End Header */
 
+/* Start About */
+
+.about {
+  padding: 60px 0;
+  background: #f7f7f7;
+  border-bottom: 1px solid #e9e9e9
+}
+
+.about p {
+  margin: 0;
+  margin-bottom: 40px;
+  color: #777;
+  font-size: 20px;
+  text-align: center
+}
+
+.about .info-content {
+  margin: 25px 0
+}
+
+.about .info-content .list-info {
+  padding: 0;
+  margin: 0
+}
+
+.about .info-content .list-info li {
+  padding: 5px 20px;
+  margin: 7px 0;
+  position: relative
+}
+
+.about .info-content .list-info li:nth-child(odd) {
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  border-radius: 50px
+}
+
+.about .info-content .list-info li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  color: #77D970;
+  font-size: 15px;
+  position: relative;
+  top: 2px;
+  left: 10px
+}
+
+/* End About */
+
 /* Start Products */
 
 .products {
@@ -418,56 +468,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* End Myphome */
-
-/* Start About */
-
-.about {
-  padding: 60px 0;
-  background: #f7f7f7;
-  border-bottom: 1px solid #e9e9e9
-}
-
-.about p {
-  margin: 0;
-  margin-bottom: 40px;
-  color: #777;
-  font-size: 20px;
-  text-align: center
-}
-
-.about .info-content {
-  margin: 25px 0
-}
-
-.about .info-content .list-info {
-  padding: 0;
-  margin: 0
-}
-
-.about .info-content .list-info li {
-  padding: 10px 15px;
-  margin: 5px 0;
-  position: relative
-}
-
-.about .info-content .list-info li:nth-child(odd) {
-  background: #fff;
-  border: 1px solid #e9e9e9;
-  border-radius: 50px 0 0 50px
-}
-
-.about .info-content .list-info li::before {
-  content: "\f100";
-  font-family: "Font Awesome 5 Free";
-  font-weight: bold;
-  color: var(--main-color);
-  font-size: 20px;
-  position: relative;
-  top: 4px;
-  left: 5px
-}
-
-/* End About */
 
 /* Start Main Social */
 
